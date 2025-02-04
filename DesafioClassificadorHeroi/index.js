@@ -18,9 +18,19 @@ function classificarHeroi(nome, xp){
     } else {
         nivelHeroi = "Radiante";
     }
-        return 'O heroi de nome ${nome} esta no nivel de ${nivelHeroi}';
+    return 'O heroi de nome ${nome} esta no nivel de ${nivelHeroi}';
 
     }
 
-}
+    const herois = [
+        { nome: "joao", xp: 7500},
+        { nome: "LEANDO",xp: 8500},
+        { nome: "PEDRO", xp: 9200},
+        { nome: "LUCAS", xp: 3300},
+        { nome: "BENEDITO", xp: 10600}
+
+    ];
+    herois.forEach(heroi =>console.log(classificarHeroi(heroi.nome, heroi.xp)));
+
+
    
